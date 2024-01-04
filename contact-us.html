@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- next 2 metas are required for bootstrap-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Welcome to my first page">
+        <title>MY FIRST PAGE</title>
+        <!--this is a comment-->
+        
+        <!-- next 2 stylesheets are required for bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/fonta-wesome.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/edting-bootstrp.css"/>
+        
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/aos.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header section start -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about-us.html">عن الشركة</a></li>
+                    <!-- <li><a href="our-projects.html">مشاريعنا</a></li> -->
+                    <li><a href="customers.html">شركاء النجاح</a></li>
+                    <li><a href="contact-us.html" class="active">إتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="fa fa-list"></div>
+            <div>
+                <p><a href="index.html" class="text-logo">شركة عبد الله بن جار الله</a></p>
+                <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"></a>
+              </div>
+        </header>
+        <!-- header section end -->
+
+        <!-- project-type section starts -->
+        <section id="contact-us" class="container-fluid ">
+            <div class="container grid">
+                <div class="add-text">
+                    <h3>العنوان البريدي:</h3>
+                    <p>الرياض - ص.ب 8957 الرياض 11692</p>
+                    <h3>أرقام الهاتف:</h3>
+                    <p>011/2091111 - 011/8120999 - 011/8129298</p>  
+                </div>
+                <div class="contact-form card" data-aos="flip-right">
+                    <form id="contact-form" method="POST" action="">
+                        <input class="form-control" type="text" name="name" placeholder="الإسم" required><br>
+                        <input class="form-control" type="text" name="company" placeholder="اسم الشركة"><br>
+                        <input class="form-control" type="email" name="email" placeholder="E-mail" required><br>
+                        <textarea class="form-control" name="message" id="" rows="4" placeholder="الرسالة" required></textarea><br>
+                        <input type="submit" class="form-control submit" value="إرسال" >
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="data">
+                <div class="address">
+                    <h3>العنوان:</h3>
+                    <p>الرياض - حي الرمال - شارع دلجة بن قيس</p>
+                    <h3>العنوان البريدي:</h3>
+                    <p>الرياض - ص.ب 8957 الرياض 11692</p>
+                    <h3>أرقام الهاتف:</h3>
+                    <p>011/2091111 - 011/8120999 - 011/8129298</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.912983178513!2d46.757087527285655!3d24.798433007193545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efe6e0ba8b733%3A0xc26abdee177aece4!2sBin%20Jarallah%20Construction%20Co.!5e0!3m2!1sen!2seg!4v1610647157588!5m2!1sen!2seg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div> -->
+            
+            
+        </section>
+        
+        
+
+        
+        
+                
+        
+        
+
+        <!-- footer section starts -->
+        <footer id="footer" class="container-fluid footer-fix con-footer" dir="ltr">
+            <div class="copy-rights">
+                <h5>&copy;Copyright 2021 Ayman Soliman, All rights reserved</h5>
+            </div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook-square social-icons"></a>
+                <a href="#" class="fa fa-youtube-square social-icons"></a>
+                <a href="#" class="fa fa-twitter-square social-icons"></a>
+            </div>
+            
+        </footer>
+        <!-- footer section ends -->
+
+
+        <!-- next 2 javascript files are required for bootstrap -->
+        <script src="js/jquery-2.1.4-min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+        <!-- <script src="/js/plugins.js"></script> -->
+
+        <!-- toggle the menu in mobiles -->
+        <script>
+            $(document).ready(function(){
+               $('.fa-list').click(function(){
+                   $(this).toggleClass('fa-times-circle');
+                   $('nav').toggleClass('nav-toggle');
+                });
+                $('nav ul li a').click(function(){
+                   $('.fa-list').removeClass('fa-times-circle');
+                   $('nav').removeClass('nav-toggle');
+                });
+                
+               //  -------------------
+                
+           });
+           </script>
+    </body>
+
+</html>
